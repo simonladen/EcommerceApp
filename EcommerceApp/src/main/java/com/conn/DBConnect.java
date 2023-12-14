@@ -12,9 +12,10 @@ public class DBConnect
 	{
 		try {
 			
-			Class.forName("com.mysql.cj.jdbc.Driver");
+                    Class.forName("com.mysql.cj.jdbc.Driver");
+                    Class.forName("org.sqlite.JDBC");
 		//	conn = DriverManager.getConnection("jdbc:sqlite:mydatabase.db");
-			conn = DriverManager.getConnection("jdbc:sqlite:C:/Users/Swapnil/eclipse-workspace/Online Electronic Shopping/mydatabase.db");
+			conn = DriverManager.getConnection("jdbc:sqlite:C:/Dev/test/EcommerceApp/EcommerceApp/mydatabase.db");
 			
 		}catch (Exception e) {
 			e.printStackTrace();
